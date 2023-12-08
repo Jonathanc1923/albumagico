@@ -366,7 +366,7 @@ def disenos_una_persona():
     b = "individuales"
     session["b"] = b
     # Ruta a la carpeta de imágenes para 1 persona
-    folder_path = os.path.join('static', "individuales", 'reducido')
+    folder_path = os.path.join('static')
     # Obtener la lista de nombres de archivos en la carpeta
     image_files = os.listdir(folder_path)
     # Construir la ruta completa para cada imagen
@@ -573,13 +573,3 @@ def procesar():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-
-
-
-
-
-
-
-
-
-
